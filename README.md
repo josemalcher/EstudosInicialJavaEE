@@ -21,8 +21,16 @@ JSP
 MySQL  - Download do Banco de dados
 Tomcat - Download do Servidor 7.0.*
 
+####Video 02 - 00:10:14
+Resumo:
 
-####Video 02
+Instalação do Servidor TOMCAT(windows)
+
+Linux: Extrir pasta -> mv para /opt/... 
+
+Ajustar Usuário em /tomcat...*/conf/tomcat-users.xml -> descomentar linhas e ajustar usuários
+
+Adicionando Tomcat no Eclipse
 
 ####Video 03
 
