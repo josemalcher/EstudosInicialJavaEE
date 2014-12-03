@@ -32,7 +32,20 @@ Ajustar Usuário em /tomcat...*/conf/tomcat-users.xml -> descomentar linhas e aj
 
 Adicionando Tomcat no Eclipse
 
-####Video 03
+####Video 03 - 00:23:53
+Sobre o uso do Servlet
+
+Criar um Dynamic web Project - Sistema de Chamados: Versão 2.5 do Servlet
+
+web.xml - sua importancia para versão 2.5 (versão atual 3.*)
+
+extends __HttpServlet__
+
+Metodos doGet e doPost
+
+[Códigos Fonte Vídeo 03](http://#)
+
+
 
 ####Video 04
 
