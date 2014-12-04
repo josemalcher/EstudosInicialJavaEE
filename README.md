@@ -43,11 +43,16 @@ extends __HttpServlet__
 
 Metodos doGet e doPost
 
-[Códigos Fonte Vídeo 03](http://#)
+[Códigos Fonte Vídeo 03](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_3)
 
+####Video 04 - 00:15:46
+Página Novo Chamado
 
+Methods POST/GET
 
-####Video 04
+Mudanças da versão 3.0 > Não precisa mais registrar no web.xml Registro direto na classe 
+
+[Códigos Fonte Vídeo 03](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_4)
 
 ####Video 05
 
