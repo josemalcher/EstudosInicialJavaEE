@@ -52,7 +52,7 @@ Methods POST/GET
 
 Mudanças da versão 3.0 > Não precisa mais registrar no web.xml Registro direto na classe 
 
-[Códigos Fonte Vídeo 03](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_4)
+[Códigos Fonte Vídeo 04](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_4)
 
 ####Video 05
 
