@@ -2,7 +2,9 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import javax.servlet.ServletException;
@@ -10,9 +12,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.mysql.jdbc.Connection;
-import com.mysql.jdbc.Driver;
-import com.mysql.jdbc.Statement;
+//import com.mysql.jdbc.Connection;
+//import com.mysql.jdbc.Driver;
+//import com.mysql.jdbc.PreparedStatement;
+//import com.mysql.jdbc.Statement;
 
 public class NovoChamadoServlet extends HttpServlet {
 
@@ -64,19 +67,30 @@ public class NovoChamadoServlet extends HttpServlet {
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
 
-				String SQL = "INSERT INTO chamados (titulo, conteudo) VALUES (";
-				SQL+= " '"+titulo+"', '"+conteudo+"')";
+				//String SQL = "INSERT INTO chamados (titulo, conteudo) VALUES (";
+				//SQL+= " '"+titulo+"', '"+conteudo+"')";
+				
+				//melhoria para evitar SQL injection
+				String SQL = "INSERT INTO chamados (titulo, conteudo) VALUES (?, ?)";
 				
 				try{
-					//Fiz o Casting para sumir com erro na execução
-					Connection conn =  (Connection) DriverManager.getConnection("jdbc:mysql://localhost/rlsys_chamados","root","mal369");
-					Statement stm = (Statement) conn.createStatement();
-					stm.execute(SQL);
-					stm.close();
+					
+					Connection conn =  DriverManager.getConnection("jdbc:mysql://localhost/rlsys_chamados","root","mal369");
+					//Statement stm = conn.createStatement();
+					PreparedStatement pstm = conn.prepareStatement(SQL);
+					
+					pstm.setString(1, titulo);
+					pstm.setString(2, conteudo);
+					
+					//stm.execute(SQL);
+					pstm.execute();
+					pstm.close();
 					conn.close();
 
 				}catch(SQLException ex){
-					out.println("Problema ao carregar BD"+ex.getMessage());
+					out.println("Problema ao carregar BD");
+					out.println(ex.getErrorCode());
+					out.println(ex.getMessage());
 					
 				}
 
