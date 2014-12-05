@@ -54,7 +54,24 @@ Mudanças da versão 3.0 > Não precisa mais registrar no web.xml Registro diret
 
 [Códigos Fonte Vídeo 04](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_4)
 
-####Video 05
+####Video 05 - 00:16:18
+Usando Banco de Dados
+
+[Buscar Driver do Banco de dados. MySQL(2014)](http://dev.mysql.com/downloads/connector/j/)
+
+Pasta WEB-INF/lib -> local para armazenar bibliotecas.
+```java
+try {
+    Class.forName("com.mysql.jdbc.Driver");
+    } catch (ClassNotFoundException e) {
+    out.println("Erro ao carregar o DRIVER de conexão");
+    }
+```
+
+Criação do Bando de dados - [Chamados, .sql]()
+
+[Códigos Fonte Vídeo 05](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_5)
+
 
 ####Video 06
 
