@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -27,13 +28,27 @@ public class ListarChamados extends HttpServlet {
 			//Carrega o driver de conexão
 			Class.forName("com.mysql.jdbc.Driver");
 
-			String SQL = "SELECT * FROM chamados";
+			
 
 			try {
 
 				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/rlsys_chamados", "root","mal369");
 				
 				Statement stm = conn.createStatement();
+				
+				//DELETA O REGISTRO
+				//Quando existir uma query string ID
+				if(request.getParameter("id") != null){
+					int ID = Integer.parseInt(request.getParameter("id"));
+					String SQLDelete = "DELETE FROM chamados WHERE id= ?";
+					PreparedStatement pstm = conn.prepareStatement(SQLDelete);
+					pstm.setInt(1, ID);
+					pstm.execute();
+				}
+				
+				
+				
+				String SQL = "SELECT * FROM chamados";
 				
 				ResultSet rs = stm.executeQuery(SQL);
 				out.println("<html>");
