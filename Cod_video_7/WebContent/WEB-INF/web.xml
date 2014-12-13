@@ -37,4 +37,14 @@
     <servlet-name>ListarChamados</servlet-name>
     <url-pattern>/ListarChamados</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditarChamadoServlet</display-name>
+    <servlet-name>EditarChamadoServlet</servlet-name>
+    <servlet-class>EditarChamadoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditarChamadoServlet</servlet-name>
+    <url-pattern>/EditarChamados</url-pattern>
+  </servlet-mapping>
 </web-app>

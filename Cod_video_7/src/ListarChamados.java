@@ -64,8 +64,8 @@ public class ListarChamados extends HttpServlet {
 						out.println("<tr>");
 						out.println("<td>"+ rs.getInt("id") +"</td>");
 						out.println("<td>"+ rs.getString("titulo") +"</td>");
-						out.println("<td><a href=''>[Editar ]</a></td>");
-						out.println("<td><a href='http://localhost:8080/SistemaChamado/ListarChamados?id="+rs.getInt("id")+"'>[Apagar ]</a></td>");
+						out.println("<td><a href='http://localhost:8080/SistemaChamado/EditarChamados?id="+rs.getInt("id")+"'>[ Editar ]</a></td>");
+						out.println("<td><a href='http://localhost:8080/SistemaChamado/ListarChamados?id="+rs.getInt("id")+"'>[ Apagar ]</a></td>");
 						out.println("</tr>");
 					}
 				out.println("</tr>");

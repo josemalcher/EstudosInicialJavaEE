@@ -90,6 +90,8 @@ public class NovoChamadoServlet extends HttpServlet {
 					pstm.execute();
 					pstm.close();
 					conn.close();
+					
+					res.sendRedirect("http://localhost:8080/SistemaChamado/ListarChamados");
 
 				} catch (SQLException ex) {
 					out.println("Problema ao carregar BD");
