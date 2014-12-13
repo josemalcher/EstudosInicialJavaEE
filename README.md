@@ -86,7 +86,12 @@ Criação da página de Listagem
 Partes do vídeo divido nos commits
 
 [Códigos Fonte Vídeo 07](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_7)
-####Video 08
+
+####Video 08 - 24:35
+Login e Senha - Session
+
+
+[Códigos Fonte Vídeo 08](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_8)
 
 ####Video 09
 
