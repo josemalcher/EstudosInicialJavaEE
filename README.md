@@ -81,7 +81,11 @@ Criação das Query: INSERT e testes.
 [Códigos Fonte Vídeo 06](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_6)
 
 ####Video 07
+Criação da página de Listagem
 
+Partes do vídeo divido nos commits
+
+[Códigos Fonte Vídeo 07](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_7)
 ####Video 08
 
 ####Video 09
