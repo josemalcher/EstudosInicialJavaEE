@@ -87,7 +87,7 @@ Partes do vídeo divido nos commits
 
 [Códigos Fonte Vídeo 07](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_7)
 
-####Video 08 - 24:35
+####Video 08 - 00:24:35
 Login e Senha - Session
 
 
@@ -98,9 +98,17 @@ Ler e como gravar Cookies
 
 [Códigos Fonte Vídeo 09](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_9)
 
-####Video 10
+####Video 10 - 00:08:28
+Versão mais atual do Servlet
 
-####Video 11
+Uso de Anotations
+
+ex: @WebServlet("/PaginaIndex")
+
+####Video 11 - 00:25:47
+Introdução ao JSP
+
+[Códigos Fonte Vídeo 11](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_11)
 
 ####Video 12
 
