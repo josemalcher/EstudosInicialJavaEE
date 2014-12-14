@@ -94,6 +94,9 @@ Login e Senha - Session
 [Códigos Fonte Vídeo 08](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_8)
 
 ####Video 09
+Ler e como gravar Cookies
+
+[Códigos Fonte Vídeo 09](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_9)
 
 ####Video 10
 
