@@ -111,6 +111,30 @@ Introdução ao JSP
 [Códigos Fonte Vídeo 11](https://github.com/josemalcher/EstudosInicialJavaEE/tree/master/Cod_video_11)
 
 ####Video 12
+Tratamento de Erro
 
-####Video 13
+tad da página de erro -> isErrorPage="true"
+
+tag para páginas comuns-> erroPage="nomePaginaErro.jsp"
+
+Adição do campo data (DATE())
+
+```java
+Date dataSQL = new Date(new java.util.Date().getTime());
+//SimpleDateFOrmat date = new SimpleDateFormat("yyyy-MM-dd");
+//date.format(data);
+
+// ou
+
+//java.sql.Date dataSQL = new java.sql.Date(data.getTime())
+
+pstm.setDate(3,dataSQL);
+
+```
+
+####Video 13 00:08:10 (final)
+Hospedadar Sistema
+
+Arquivo .war
+
 
